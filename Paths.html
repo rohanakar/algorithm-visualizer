@@ -1,0 +1,39 @@
+<html>
+<head>
+<script src="paths.js"></script>
+<style>
+ canvas {
+	border: 1px solid black;
+	margin-left:100px;
+	margin-top:100px; 
+	}
+ div{
+	margin-left:100px;
+	display:flex;
+	margin-top:20px;
+	width:500;
+	justify-content:space-evenly;
+ }
+</style>
+</head>
+<body onload="init();">
+  <canvas id="myCanvas" width="500" height="500"></canvas>
+  <div>
+	  <button id="change_complexity" onClick = "CS()">
+		Change complexity
+	  </button>
+	   <button id="speed" onClick = "speed()">
+			speed
+	  </button>
+	  <button id="findPath" onClick = "findPath()">
+			findPath
+	  </button>
+	   <button id="slow" onClick = "slow()">
+			slow
+	  </button>
+	  <button id="bfs" onClick = "bfs()">
+			bfs
+	  </button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+<head>
+<script src="sorts.js"></script>
+<style>
+ canvas {
+	border: 1px solid black;
+	margin-left:100px;
+	margin-top:100px; 
+	}
+ div{
+	margin-left:100px;
+	display:flex;
+	margin-top:20px;
+	width:640px;
+	justify-content:space-evenly;
+ }
+</style>
+</head>
+<body onload="init();">
+  <canvas id="myCanvas" width="640" height="480"></canvas>
+  <div>
+  <button id="bs" onClick = "BS()">
+	Bubble sort
+  </button>
+  <button id="ms" onClick = "MS()">
+	Merge sort
+  </button>
+  <button onClick = "speed()">
+	speedUp
+  </button>
+   <button onClick = "clears()">
+	refresh
+  </button>
+  <button onClick = "changeArrSize()">
+	change elements size
+  </button>
+  </div>
+   <p id="actions">
+		no. of actions 
+   </p>
+    <p id="elements">
+		no. of elements : 100 
+   </p>
+</body>
+</html>
